@@ -1,0 +1,149 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-style: normal;
+    background-color: var(--Pale-blue);
+}
+
+.container{
+    padding: 40px 20px;
+}
+
+.card{
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card .card-header{
+
+}
+
+.card .card-header img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card .card-body{
+    padding: 10px 20px;
+}
+
+.card .card-body h2{
+    color: var(--Dark-blue);
+}
+
+.card .card-body p{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.card .card-body .group-card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 43%, 95%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card .card-body .group-card-body .group-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body .group-card-body .group-2 .title{
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+.card .card-body .group-card-body .group-2 .money{
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.card .card-body .group-card-body .group-3 a{
+    font-weight: 700;
+    color: var(--Bright-blue);
+}
+
+.card .card-body .group-card-body .group-3 a:hover{
+    color: hsl(245, 48%, 56%);
+    transition: 0.2s;
+}
+
+
+.card .card-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.card .card-footer button{
+    background-color: var(--Bright-blue);
+    height: 40px;
+    color: var(--Very-pale-blue);
+    border: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    box-shadow: 0 1px 1px 0 var(--Bright-blue), 0 3.5px 3.5px 0 var(--Bright-blue);
+    cursor: pointer;
+}
+
+.card .card-footer button:hover{
+    background-color: hsl(245, 48%, 56%);
+    box-shadow: 0 1px 1px 0 hsl(245, 48%, 56%), 0 3.5px 3.5px 0 hsl(245, 48%, 56%);
+    transition: 0.2s;
+}
+
+.card .card-footer a{
+    margin-top: 10px !important;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+.card .card-footer a:hover{
+    color: var(--Dark-blue);
+    transition: 0.2s;
+}
+
+@media only screen and (min-width: 600px) {
+    .container{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        /* background-position: top; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* background-size: cover; */
+        position: relative;
+    }
+    
+}
+
